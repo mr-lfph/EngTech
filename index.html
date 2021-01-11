@@ -14,6 +14,27 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="103213018323451" logged_in_greeting="Hi! WelCome to EngTech! How can we help you?" logged_out_greeting="Hi! WelCome to EngTech! How can we help you?"> </div>
+
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar1">
         <div class="container">
@@ -136,6 +157,11 @@
                             <li class="list-group-item">External Sewer Reticulation</li>
                             <li class="list-group-item">Sewerage Treatment Plant</li>
                             <li class="list-group-item">Land Reclamation</li>
+                            <li class="list-group-item"></li>Plumbing </li>
+                            <li class="list-group-item"></li>Electrical </li>
+                            <li class="list-group-item"></li>All kind of survey </li>
+                            <li class="list-group-item"></li>Interior &landscaping </li>
+                            <li class="list-group-item"></li>Sub soil investigation</li>
                         </ul>
                     </div>
                 </div>
@@ -270,7 +296,7 @@
                             <li>STAADPRO</li> <i class="far fa-hand-point-right"></i> software for steel, concrete, timber, aluminum and cold-formed steel structure design
                             <li> PROKON</li> <i class="far fa-hand-point-right"></i> software for the structural analysis and design of steel, concrete, timber and geotechnical analysis
                             <li>ADAPT-PT</li> <i class="far fa-hand-point-right"></i> software for the analysis and design of one-way or two-way post tensioned floor systems and beams
-
+                            <li>Etabs</li> <i class="far fa-hand-point-right"></i> For structural design like beam column slab
                         </p>
                     </div>
                 </div>
@@ -356,13 +382,14 @@
                 <div class="d-flex flex-row">
                     <div class="p-2 d-flex align-items-center"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="p-2">
-                        <div class="flex-column">No. 52-2, 2nd Floor, Bosunia Para</div>
-                        <div class="flex-column">Pirgachaa Rangpur.</div>
+                        <div class="flex-column">Park more , Cadet College</div>
+                        <div class="flex-column">Rangpur.</div>
                     </div>
                 </div>
                 <div class="d-flex flex-row">
                     <div class="p-2"><i class="fas fa-envelope-square"></i></div>
-                    <div class="p-2"><i>engtech.ra@gmail.com</i></div>
+                    <div class="p-2"><i>engtech2021@ gmail.com </i></div>
+
                 </div>
             </div>
 
